@@ -1,0 +1,20 @@
+Proving methods in sv_esc.Bag
+Starting proof of sv_esc.Bag.Bag(int[]) with prover !!!!
+error: The executable for prover cvc4 is not specified - use -exec or define an openjml.prover.... property
+Completed proof of sv_esc.Bag.Bag(int[]) with prover !!!! - failed
+Starting proof of sv_esc.Bag.Bag(sv_esc.Bag) with prover !!!!
+Completed proof of sv_esc.Bag.Bag(sv_esc.Bag) with prover !!!! - failed
+Starting proof of sv_esc.Bag.removeOnce(int) with prover !!!!
+Completed proof of sv_esc.Bag.removeOnce(int) with prover !!!! - failed
+Starting proof of sv_esc.Bag.removeAll(int) with prover !!!!
+Completed proof of sv_esc.Bag.removeAll(int) with prover !!!! - failed
+Starting proof of sv_esc.Bag.getCount(int) with prover !!!!
+Completed proof of sv_esc.Bag.getCount(int) with prover !!!! - failed
+Starting proof of sv_esc.Bag.add(int) with prover !!!!
+Completed proof of sv_esc.Bag.add(int) with prover !!!! - failed
+Starting proof of sv_esc.Bag.add(sv_esc.Bag) with prover !!!!
+Completed proof of sv_esc.Bag.add(sv_esc.Bag) with prover !!!! - failed
+Starting proof of sv_esc.Bag.arraycopy(int[],int,int[],int,int) with prover !!!!
+Completed proof of sv_esc.Bag.arraycopy(int[],int,int[],int,int) with prover !!!! - failed
+Completed proving methods in sv_esc.Bag
+1 error

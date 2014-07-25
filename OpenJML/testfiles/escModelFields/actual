@@ -1,0 +1,310 @@
+testfiles/escModelFields/EscModelFields.java:2: error: package org.jmlspecs.lang does not exist
+public class EscModelFields {
+^
+testfiles/escModelFields/EscModelFields.java:6: error: package org.jmlspecs.annotation does not exist
+    //@ public model int value;
+               ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:52: error: package org.jmlspecs.annotation does not exist
+    public /*@ pure @*/ Object();
+               ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:59: error: package org.jmlspecs.annotation does not exist
+    public /*@ pure @*/ final /*@non_null*/ Class<?> getClass();
+                                 ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:95: error: package org.jmlspecs.annotation does not exist
+    public /*@ pure @*/ boolean equals(/*@\readonly*//*@nullable*/ Object obj);
+                                                        ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:35: error: cannot find symbol
+    //@ public non_null model JMLDataGroup objectState;
+                              ^
+  symbol:   class JMLDataGroup
+  location: class Object
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:38: error: cannot find symbol
+    //@ public non_null model JMLDataGroup privateState; in objectState;
+                              ^
+  symbol:   class JMLDataGroup
+  location: class Object
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/reflect/Array.jml:22: error: package org.jmlspecs.lang does not exist
+package java.lang.reflect;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Object.jml:44: error: package org.jmlspecs.annotation does not exist
+    //@ ghost public nullable Object owner;
+        ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/Serializable.jml:3: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/lang/Class.jml:20: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/lang/Class.jml:27: error: package org.jmlspecs.annotation does not exist
+//@ pure nullable_by_default
+         ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java7/java/lang/Throwable.jml:37: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/Exception.jml:26: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java7/java/lang/Throwable.jml:55: error: package org.jmlspecs.annotation does not exist
+        public pure helper model boolean standardThrowable();
+                    ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/CloneNotSupportedException.jml:3: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Comparable.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/CharSequence.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/CharSequence.jml:29: error: package org.jmlspecs.annotation does not exist
+    //@ public instance model non_null char[] charArray;
+               ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/String.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/InterruptedException.jml:3: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/RuntimeException.jml:26: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/IllegalArgumentException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/IndexOutOfBoundsException.jml:3: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/ArrayIndexOutOfBoundsException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/NegativeArraySizeException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/InputStream.jml:22: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/InputStream.jml:35: error: cannot find symbol
+    //@ public model JMLDataGroup streamState; in objectState;
+                     ^
+  symbol:   class JMLDataGroup
+  location: class InputStream
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/ClassNotFoundException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/InstantiationException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/IllegalAccessException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Package.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/reflect/Field.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang.reflect;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/SecurityException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/reflect/Method.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang.reflect;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/reflect/Constructor.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang.reflect;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/NoSuchFieldException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/NoSuchMethodException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/OutputStream.jml:21: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/OutputStream.jml:36: error: cannot find symbol
+    //-RAC@ public model JMLDataGroup output; in objectState;
+                         ^
+  symbol:   class JMLDataGroup
+  location: class OutputStream
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/FilterOutputStream.jml:4: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/PrintStream.jml:21: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/Writer.jml:3: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/PrintWriter.jml:2: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/StackTraceElement.jml:22: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/IOException.jml:3: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/UnsupportedEncodingException.jml:3: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/Cloneable.jml:3: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Locale.jml:22: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/util/regex/Pattern.jml:21: error: package org.jmlspecs.lang does not exist
+package java.util.regex;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Comparator.jml:1: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/NullPointerException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/StringIndexOutOfBoundsException.jml:3: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/StringBuffer.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/Number.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/math/BigInteger.jml:21: error: package org.jmlspecs.lang does not exist
+package java.math;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/reflect/InvocationTargetException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang.reflect;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/util/MissingResourceException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/regex/Matcher.jml:21: error: package org.jmlspecs.lang does not exist
+package java.util.regex;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/System.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Dictionary.jml:1: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Map.jml:19: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Hashtable.jml:19: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/util/Properties.jml:1: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/SecurityManager.jml:14: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Enumeration.jml:26: error: package org.jmlspecs.lang does not exist
+//@ model import org.jmlspecs.lang.JMLDataGroup;
+                                  ^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Enumeration.jml:24: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Iterable.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Collection.jml:24: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Collection.jml:36: error: cannot find symbol
+    //@ public model instance JMLDataGroup localState; in objectState;
+                              ^
+  symbol:   class JMLDataGroup
+  location: interface Collection<E>
+  where E is a type-variable:
+    E extends Object declared in interface Collection
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Set.jml:23: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/File.jml:4: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/Runnable.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/org/jmlspecs/lang/JMLDataGroup.jml:22: error: package org.jmlspecs.annotation does not exist
+import org.jmlspecs.annotation.*;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/org/jmlspecs/lang/JMLDataGroup.jml:21: error: package org.jmlspecs.lang does not exist
+package org.jmlspecs.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/org/jmlspecs/lang/JMLDataGroup.jml:31: error: cannot find symbol
+public @Pure final class JMLDataGroup implements Cloneable {
+        ^
+  symbol: class Pure
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/util/Iterator.jml:23: error: package org.jmlspecs.lang does not exist
+package java.util;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/ArrayStoreException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/net/URI.jml:22: error: package org.jmlspecs.lang does not exist
+package java.net;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/net/MalformedURLException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.net;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/FileFilter.jml:3: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/io/FilenameFilter.jml:7: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/io/ObjectStreamException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.io;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Character.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/net/URISyntaxException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.net;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Integer.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/NumberFormatException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Byte.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/lang/Class.jml:96: error: cannot access IJMLTYPE
+    //@   ensures \result <==> (obj != null && (\typeof(obj) <: (\TYPE)this));
+                                                                 ^
+  class file for org.jmlspecs.utils.IJMLTYPE not found
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java4/java/lang/IllegalStateException.jml:1: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Boolean.jml:22: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Long.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Float.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Double.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java5/java/lang/Short.jml:21: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+/Users/shunghsiyu/Documents/workspace/Specs/trunk/java6/java/lang/Math.jml:20: error: package org.jmlspecs.lang does not exist
+package java.lang;
+^
+testfiles/escModelFields/EscModelFields.java:2: error: cannot access Utils
+public class EscModelFields {
+       ^
+  class file for org.jmlspecs.utils.Utils not found
+98 errors

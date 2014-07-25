@@ -1,0 +1,12 @@
+Proving methods in sv_esc.LoopExercises
+Starting proof of sv_esc.LoopExercises.LoopExercises() with prover !!!!
+error: The executable for prover cvc4 is not specified - use -exec or define an openjml.prover.... property
+Completed proof of sv_esc.LoopExercises.LoopExercises() with prover !!!! - failed
+Starting proof of sv_esc.LoopExercises.isOrdered(int[]) with prover !!!!
+Completed proof of sv_esc.LoopExercises.isOrdered(int[]) with prover !!!! - failed
+Starting proof of sv_esc.LoopExercises.gauss(int) with prover !!!!
+Completed proof of sv_esc.LoopExercises.gauss(int) with prover !!!! - failed
+Starting proof of sv_esc.LoopExercises.max(int[]) with prover !!!!
+Completed proof of sv_esc.LoopExercises.max(int[]) with prover !!!! - failed
+Completed proving methods in sv_esc.LoopExercises
+1 error
