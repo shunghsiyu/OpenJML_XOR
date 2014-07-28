@@ -126,6 +126,7 @@ public class JmlTreeUtils {
     final public ClassSymbol utilsClass;
     final public JCIdent utilsClassIdent;
     final public Symbol andSymbol;
+    final public Symbol xorSymbol;
     final public Symbol orSymbol;
     final public Symbol intbitandSymbol;
     final public Symbol longbitandSymbol;
@@ -181,6 +182,7 @@ public class JmlTreeUtils {
         utilsClassIdent.type = utilsClass.type; // ident containing flatname
         utilsClassIdent.sym = utilsClassIdent.type.tsym;
         andSymbol = findOpSymbol(JCTree.AND,syms.booleanType);
+        xorSymbol = findOpSymbol(JCTree.XOR,syms.booleanType);
         orSymbol = findOpSymbol(JCTree.OR,syms.booleanType);
         intbitandSymbol = findOpSymbol(JCTree.BITAND,syms.intType);
         longbitandSymbol = findOpSymbol(JCTree.BITAND,syms.longType);
