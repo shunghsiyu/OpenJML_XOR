@@ -284,14 +284,15 @@ public abstract class JCTree implements Tree, Cloneable, DiagnosticPosition {
     /** Binary operators, of type Binary.
      */
     public static final int OR = NULLCHK + 1;                // ||
-    public static final int AND = OR + 1;                    // && 58
+    public static final int XOR = OR + 1;                    // ^^
+    public static final int AND = XOR + 1;                   // && 59
     public static final int BITOR = AND + 1;                 // |
     public static final int BITXOR = BITOR + 1;              // ^
     public static final int BITAND = BITXOR + 1;             // &
     public static final int EQ = BITAND + 1;                 // ==
     public static final int NE = EQ + 1;                     // !=
-    public static final int LT = NE + 1;                     // < 64
-    public static final int GT = LT + 1;                     // > 65
+    public static final int LT = NE + 1;                     // < 65
+    public static final int GT = LT + 1;                     // > 66
     public static final int LE = GT + 1;                     // <=
     public static final int GE = LE + 1;                     // >=
     public static final int SL = GE + 1;                     // <<
