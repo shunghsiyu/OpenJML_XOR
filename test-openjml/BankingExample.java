@@ -14,7 +14,7 @@
         this.balance = 0;
     }
  
-    //@ requires !false && amount + balance < MAX_BALANCE;
+    //@ requires !false ^^ amount + balance < MAX_BALANCE;
     // assignable balance;
     // ensures balance == \old(balance) + amount;
     public void credit(final int amount)
