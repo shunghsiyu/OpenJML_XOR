@@ -1,4 +1,17 @@
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
 *.class
+.classpath
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
