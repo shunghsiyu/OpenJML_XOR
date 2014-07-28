@@ -983,6 +983,7 @@ public class Pretty extends JCTree.Visitor {
             case JCTree.POSTDEC: return "--";
             case JCTree.NULLCHK: return "<*nullchk*>";
             case JCTree.OR:      return "||";
+            case JCTree.XOR:     return "^^";
             case JCTree.AND:     return "&&";
             case JCTree.EQ:      return "==";
             case JCTree.NE:      return "!=";
