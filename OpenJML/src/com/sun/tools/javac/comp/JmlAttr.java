@@ -1208,6 +1208,7 @@ public class JmlAttr extends Attr implements IJmlVisitor {
      */
     protected JCExpression makeBinary(int optag, JCExpression lhs, JCExpression rhs, int pos) {
         if (optag == JCTree.OR && lhs == falseLit) return rhs;
+        if (optag == JCTree.XOR && lhs == falseLit) return rhs;
         if (optag == JCTree.AND && lhs == trueLit) return rhs;
         JCBinary tree = make.at(pos).Binary(optag, lhs, rhs);
         tree.operator = predefBinOp(optag, lhs.type);
