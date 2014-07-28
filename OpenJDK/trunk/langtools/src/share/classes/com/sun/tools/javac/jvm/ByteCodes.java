@@ -249,7 +249,8 @@ public interface ByteCodes {
     int string_add      = 256,  // string +
         bool_not        = 257,  // boolean !
         bool_and        = 258,  // boolean &&
-        bool_or         = 259;  // boolean ||
+        bool_or         = 259,  // boolean ||
+        bool_xor         = 260; // boolean ^^
 
     /** Virtual opcodes; used for shifts with long shiftcount
      */
