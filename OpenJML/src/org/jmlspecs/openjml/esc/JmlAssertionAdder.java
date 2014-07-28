@@ -6686,7 +6686,7 @@ public class JmlAssertionAdder extends JmlTreeScanner {
                 visitApply(call);
             }
             return;
-        } else if (tag == JCTree.AND || tag == JCTree.OR) {
+        } else if (tag == JCTree.AND || tag == JCTree.XOR || tag == JCTree.OR) {
             JCExpression prev = condition;
             try {
                 Type maxJmlType = that.getLeftOperand().type;
@@ -6710,6 +6710,22 @@ public class JmlAssertionAdder extends JmlTreeScanner {
                         if (translatingJML) adjustWellDefinedConditions(lhs);
                         result = eresult = makeBin(that,tag,that.getOperator(),lhs,rhs,maxJmlType);
                     }
+                } else if (tag == JCTree.XOR) { 
+                    if (splitExpressions) {
+                        JCConditional cond = M.at(that).Conditional(that.lhs,treeutils.makeNot(that.rhs.pos, that.rhs),that.rhs);
+                        cond.setType(that.type);
+                        visitConditional(cond);
+                        return;
+                    } else {
+                        JCExpression lhs = convertExpr(that.getLeftOperand());
+                        JCExpression rhs = that.getRightOperand();
+                        lhs = addImplicitConversion(lhs,syms.booleanType,lhs);
+                        //TODO if (translatingJML) condition = treeutils.makeAnd(that.lhs.pos, condition, lhs);
+                        rhs = convertExpr(rhs); // condition is used within scanExpr so this statement must follow the previous one
+                        rhs = addImplicitConversion(rhs,syms.booleanType,rhs);
+                        //TODO if (translatingJML) adjustWellDefinedConditions(lhs);
+                        result = eresult = makeBin(that,tag,that.getOperator(),lhs,rhs,maxJmlType);
+                    }
                 } else if (tag == JCTree.OR) { 
                     if (splitExpressions) {
                         JCConditional cond = M.at(that).Conditional(that.lhs,treeutils.trueLit,that.rhs);
@@ -6726,8 +6742,8 @@ public class JmlAssertionAdder extends JmlTreeScanner {
                         if (translatingJML) adjustWellDefinedConditions(treeutils.makeNot(that.lhs.pos,lhs));
                         result = eresult = makeBin(that,tag,that.getOperator(),lhs,rhs,maxJmlType);
                     }
-                    // FIXME - add checks for numeric overflow - PLUS MINUS MUL
                 }
+                // FIXME - add checks for numeric overflow - PLUS MINUS MUL
             } finally {
                 condition = prev;
             }
