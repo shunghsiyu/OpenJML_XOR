@@ -73,6 +73,7 @@ public class TreeInfo {
         opname[JCTree.POSTDEC - JCTree.POS] = names.fromString("--");
         opname[JCTree.NULLCHK - JCTree.POS] = names.fromString("<*nullchk*>");
         opname[JCTree.OR      - JCTree.POS] = names.fromString("||");
+        opname[JCTree.XOR     - JCTree.POS] = names.fromString("^^");
         opname[JCTree.AND     - JCTree.POS] = names.fromString("&&");
         opname[JCTree.EQ      - JCTree.POS] = names.fromString("==");
         opname[JCTree.NE      - JCTree.POS] = names.fromString("!=");
@@ -273,7 +274,7 @@ public class TreeInfo {
         case(JCTree.PLUS_ASG): case(JCTree.MINUS_ASG): case(JCTree.MUL_ASG):
         case(JCTree.DIV_ASG): case(JCTree.MOD_ASG):
             return getStartPos(((JCAssignOp) tree).lhs);
-        case(JCTree.OR): case(JCTree.AND): case(JCTree.BITOR):
+        case(JCTree.OR): case(JCTree.XOR): case(JCTree.AND): case(JCTree.BITOR):
         case(JCTree.BITXOR): case(JCTree.BITAND): case(JCTree.EQ):
         case(JCTree.NE): case(JCTree.LT): case(JCTree.GT):
         case(JCTree.LE): case(JCTree.GE): case(JCTree.SL):
@@ -356,7 +357,7 @@ public class TreeInfo {
         case(JCTree.PLUS_ASG): case(JCTree.MINUS_ASG): case(JCTree.MUL_ASG):
         case(JCTree.DIV_ASG): case(JCTree.MOD_ASG):
             return getEndPos(((JCAssignOp) tree).rhs, endPositions);
-        case(JCTree.OR): case(JCTree.AND): case(JCTree.BITOR):
+        case(JCTree.OR): case(JCTree.XOR): case(JCTree.AND): case(JCTree.BITOR):
         case(JCTree.BITXOR): case(JCTree.BITAND): case(JCTree.EQ):
         case(JCTree.NE): case(JCTree.LT): case(JCTree.GT):
         case(JCTree.LE): case(JCTree.GE): case(JCTree.SL):
@@ -719,23 +720,24 @@ public class TreeInfo {
      */
     public static final int
         notExpression = -1,   // not an expression
-        noPrec = 0,           // no enclosing expression
-        assignPrec = 1,
-        assignopPrec = 2,
-        condPrec = 3,
-        orPrec = 4,
-        andPrec = 5,
-        bitorPrec = 6,
-        bitxorPrec = 7,
-        bitandPrec = 8,
-        eqPrec = 9,
-        ordPrec = 10,
-        shiftPrec = 11,
-        addPrec = 12,
-        mulPrec = 13,
-        prefixPrec = 14,
-        postfixPrec = 15,
-        precCount = 16;
+        noPrec = notExpression + 1,           // no enclosing expression
+        assignPrec = noPrec + 1,
+        assignopPrec = assignPrec + 1,
+        condPrec = assignopPrec + 1,
+        orPrec = condPrec + 1,
+        xorPrec = orPrec + 1,
+        andPrec = xorPrec + 1,
+        bitorPrec = andPrec + 1,
+        bitxorPrec = bitorPrec + 1,
+        bitandPrec = bitxorPrec + 1,
+        eqPrec = bitandPrec + 1,
+        ordPrec = eqPrec + 1,
+        shiftPrec = ordPrec + 1,
+        addPrec = shiftPrec + 1,
+        mulPrec = addPrec + 1,
+        prefixPrec = mulPrec + 1,
+        postfixPrec = prefixPrec + 1,
+        precCount = prefixPrec + 1;
 
 
     /** Map operators to their precedence levels.
@@ -764,6 +766,7 @@ public class TreeInfo {
         case JCTree.DIV_ASG:
         case JCTree.MOD_ASG: return assignopPrec;
         case JCTree.OR: return orPrec;
+        case JCTree.XOR: return xorPrec;
         case JCTree.AND: return andPrec;
         case JCTree.EQ:
         case JCTree.NE: return eqPrec;
@@ -860,6 +863,8 @@ public class TreeInfo {
         // Conditional operators
         case JCTree.AND:               // &&
             return Tree.Kind.CONDITIONAL_AND;
+        case JCTree.XOR:               // ^^
+            return Tree.Kind.CONDITIONAL_XOR;
         case JCTree.OR:                // ||
             return Tree.Kind.CONDITIONAL_OR;
 
