@@ -414,6 +414,12 @@ public interface Tree {
 
         /**
          * Used for instances of {@link BinaryTree} representing
+         * conditional-and {@code ^^}.
+         */
+        CONDITIONAL_XOR(BinaryTree.class),
+        
+        /**
+         * Used for instances of {@link BinaryTree} representing
          * conditional-or {@code ||}.
          */
         CONDITIONAL_OR(BinaryTree.class),
