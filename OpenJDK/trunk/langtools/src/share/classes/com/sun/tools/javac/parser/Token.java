@@ -123,6 +123,7 @@ public enum Token implements Formattable {
     GTEQ(">="),
     BANGEQ("!="),
     AMPAMP("&&"),
+    CARETCARET("^^"),
     BARBAR("||"),
     PLUSPLUS("++"),
     SUBSUB("--"),
