@@ -674,6 +674,7 @@ public class Symtab {
         enterBinop("!=", intType, intType, booleanType, if_icmpne);
 
         enterBinop("&&", booleanType, booleanType, booleanType, bool_and);
+        enterBinop("^^", booleanType, booleanType, booleanType, bool_xor);
         enterBinop("||", booleanType, booleanType, booleanType, bool_or);
     }
 }
