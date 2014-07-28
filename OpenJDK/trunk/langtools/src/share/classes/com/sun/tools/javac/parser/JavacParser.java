@@ -2896,6 +2896,8 @@ public class JavacParser implements Parser {
         switch (token) {
         case BARBAR:
             return JCTree.OR;
+        case CARETCARET:
+            return JCTree.XOR;
         case AMPAMP:
             return JCTree.AND;
         case BAR:
